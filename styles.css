@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+hr{
+    width: 90%;
+    opacity: 0.2;
+    margin: auto;
+    color: #2d2d2d;
+}
+body{
+    background: rgb(9,6,29);
+}
+#top{
+    background-image: linear-gradient(rgba(8, 5, 31, 0.7),rgba(8,5,31,1)),url(./assets/background.jpg);
+    background-size:contain;
+    background-position: center;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    padding: 8px 6%;
+    position: relative;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width:150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background:#db0001 ;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-left:10px ;
+    cursor: pointer;
+}
+.sign-in:hover, .hover:hover{
+    background-color: #db0000a5;
+}
+.language-btn{
+    display: inline-flex;
+    align-items: center;
+    background:rgba(0, 0, 0, 0.4) ;
+    border: 1px solid #fff;
+    padding: 1px 1px;;
+}
+.language-btn img{
+    width:10px;
+    margin: 10px;
+}
+.header-content{
+    position: absolute;
+    left: 8%;
+    max-width: 70%;
+    margin-top: 7%;
+}
+.header-content h1{
+    font-size: 4vw;
+    font-weight: 800;
+    margin-bottom: 2%;
+}
+.header-content h3{
+    font-size: 1.5vw;
+    font-weight: 700;
+    margin-bottom: 3vw;
+}
+.email1{
+    color: rgb(255, 255, 255);
+    border: 4px solid transparent;
+    border-radius: 4px;
+    background: linear-gradient(rgb(15,15,30), rgb(15,15,30)) padding-box,
+    linear-gradient(to right, rgb(229,9,20), rgb(35,51,113)) border-box;
+    outline: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: 3%;
+    padding-bottom: 2vw;
+    padding-left: 5%;
+    width: 120%;
+}
+.email-signup1{
+   display: flex;
+   align-items:center;
+   flex-wrap: wrap;
+}
+.email1 p{
+    margin-bottom: 2%;
+    font-size: 1.2rem;
+}
+.email-signup1 input{
+    background: black;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-size: 1rem;
+    outline: 0;
+    margin-right: 1%;
+    width: 38%;
+    height: 5vw;
+    padding: 2%;
+    caret-color: rgb(255, 255, 255);
+}
+.email-signup1 button{
+    background: #db0001;
+    border: 1px solid red;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1.5vw;
+    height: 5vw;
+    font-weight: 700;
+    width: 18%;
+    padding: 2%;
+    cursor: pointer;
+}
+.features{
+    width:90%;
+    margin: auto;
+    margin-top: -2vw;
+    background-color:rgb(9, 6, 37) ;
+}
+.row{
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-between;
+}
+.text-col,.img-col{
+    width: 50%;
+}
+.row img{
+    width: 40vw;
+}
+.text-col h2{
+    font-size: 3rem;
+}
+.text-col p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.accordion-body{
+    width: 80%;
+    margin: auto;
+}
+.accordion-body h1{
+    font-size: 2.5vw;
+    margin-top: 15%;
+    margin-bottom: 2%;
+    color: #ffffff;
+}
+.accordion {
+    background-color:rgb(19,33,68);
+    color: #ffffff;
+    cursor: pointer;
+    font-size:1.5vw ;
+    height: 85px;
+    line-height: 80px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 2px;
+    font-weight: 300;
+  }
+  
+  /* Change color of the heading and icon (on hover and click) */
+  .accordion:hover, .accordion:hover::after {
+    background-color: rgb(31, 53, 108);
+    color: white;
+  }
+  
+  /* Add "plus" sign (+) after Accordion */
+  .accordion::after {
+    content: '+';
+    font-size: 3.5vw;
+    color: #ffffff;
+    float: right;
+  }
+  
+  /* Add "minus" sign (-) after Accordion (when accordion is active) */
+  .active::after {
+    transform: rotate(135deg);
+    color: white;
+  }
+  
+  /* Style the accordion panel */
+  .accordion-panel {
+    background-color:rgb(19,33,68);
+    font-size: 1.5vw;
+    color: #ffffff;
+    padding: 0px 20px ;
+    margin-bottom: 5px;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+
+  .email2{
+    background:rgb(9, 6, 29) ;
+    outline: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    margin-left: 5%;
+}
+.email-signup2{
+   display: flex;
+   align-items:center;
+   flex-wrap: wrap;
+}
+.email2 p{
+    margin-bottom: 2%;
+    font-size: 1.2rem;
+}
+.email-signup2 input{
+    background: rgb(28,41,67);
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-size: 1.3vw;
+    outline: 0;
+    margin-right: 1%;
+    width: 32%;
+    height: 4vw;
+    padding: 1%;
+    caret-color: rgb(255, 255, 255);
+}
+.email-signup2 button{
+    background: #db0001;
+    border: 1px solid red;
+    border-radius: 4px;
+    outline: 0;
+    color: #fff;
+    font-size: 1.3vw;
+    font-weight: 700;
+    width: 16%;
+    height: 4vw;
+    padding: 1%;
+    cursor: pointer;
+}
+
+.footer{
+    padding: 10%;
+    color: rgb(183, 181, 181);
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer h2 a{
+    color: #cac9c9;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    color: #afafaf;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    align-items:flex-start ;
+    padding: 10px 0;
+}
+.footer .language-btn{
+    font-size: 15px;
+    color: #cac9c9;
+    padding: 6px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.copyright-txt{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+@media screen and (max-width: 1360px) {
+    .header{
+        margin-bottom: -10vw;
+       }
+  }
+
+@media screen and (max-width: 1000px) {
+   .header-content h3{
+    font-size: 3vw;
+   }  
+   .header{
+    margin-bottom: -20vw;
+   }
+    .email-signup1 input{
+        font-size: 1.5rem;
+        height: 3rem
+    }
+    .email-signup1 button{
+        width: 14rem;
+        font-size: 1.5rem;
+        height: 3rem;
+    }
+    .accordion-body h1{
+        font-size: 2rem;
+    }
+    .accordion{
+        font-size: 1.5rem;
+    }
+    .accordion::after{
+        font-size: 1.5rem;        
+    }
+    .accordion-panel{
+        font-size: 1.5rem;
+    }
+    .email-signup2 input{
+        font-size: 1.2rem;
+        height: 2rem
+    }
+    .email-signup2 button{
+        width: 10rem;
+        font-size: 1.2rem;
+        height: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .header{
+        margin-bottom: -40vw;
+       }
+    .text-col h2{
+        font-size: 2rem;
+    }
+    .email-signup1 input{
+        font-size: 1.2rem;
+        height: 3rem
+    }
+    .email-signup1 button{
+        width: 10rem;
+        font-size: 1.2rem;
+        height: 3rem;
+    }
+    .header-content h1{
+        font-size: 2rem;
+    }
+    .header-content h3{
+        font-size: 1.5rem;
+    }
+}
+    @media screen and (max-width: 460px) {
+        .email-signup1 input{
+            font-size: 0.8rem;
+        }
+        .email-signup2 input{
+            font-size: 0.7rem;
+        }
+        .accordion-body h1{
+            font-size: 1.2rem;
+        }
+        .accordion{
+            font-size: 0.9rem;
+        }
+        .accordion::after{
+            font-size: 0.9rem;        
+        }
+        .accordion-panel{
+            font-size: 0.9rem;
+        }
+    }
+    
+    @media screen and (max-width: 425px) {
+        .logo{
+            margin-bottom: 2rem;
+            margin-left: 1rem;
+        }
+    }
